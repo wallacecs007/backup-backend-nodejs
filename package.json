@@ -1,0 +1,25 @@
+{
+  "name": "backup-backend-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "nodejs": "^0.0.0",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wallacecs007/backup-backend-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wallacecs007/backup-backend-nodejs/issues"
+  },
+  "homepage": "https://github.com/wallacecs007/backup-backend-nodejs#readme"
+}
