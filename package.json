@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "knex": "^0.20.13",
     "nodejs": "^0.0.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "sqlite": "^4.0.5",
+    "sqlite3": "^4.1.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node index.js"
   },
   "repository": {
     "type": "git",
