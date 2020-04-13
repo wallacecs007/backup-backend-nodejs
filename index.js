@@ -1,15 +1,20 @@
 const express = require("express")
+const axios = require('axios')
+
 const helmet = require("helmet")
 const cors = require("cors")
 
+const testRouter = require('./Endpoints/userinformation.js')
+
 
 const server = express()
-const host = process.env.HOST || "0.0.0.0"
 const port = process.env.PORT || 5000
 
 server.use(helmet())
 server.use(cors())
 server.use(express.json())
+
+server.use('/api', testRouter)
 
 server.get("/", (req, res, next) => {
   res.json({
@@ -26,8 +31,8 @@ server.use((err, req, res, next) => {
 })
 
 if (!module.parent){
-  server.listen(port, host, () => {
-    console.log(`\n** Running on http://${host}:${port} **\n`)
+  server.listen(port, () => {
+    console.log(`\n** Running on http://localhost:${port} **\n`)
   })
 }
 
